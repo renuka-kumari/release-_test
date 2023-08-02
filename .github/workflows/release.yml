@@ -29,14 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: "Update "
-        run: |
-          git config --global user.name "Release Automation"
-          git config --global user.email "noreply@google.com"
 
-          git commit -a -m "Release version ${{ github.event.inputs.version }}"
-          git push origin master
-          
       - name: "Tag and release"
         run: |
           git tag ${{ github.event.inputs.version }}
