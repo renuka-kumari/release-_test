@@ -1,7 +1,7 @@
 # Changelog
 
 
-## v0.1 (2023-04-10)
+## [0.1] - 2023-07-07
 
 
 ### ⚠ BREAKING CHANGES
